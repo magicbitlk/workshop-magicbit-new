@@ -1016,8 +1016,10 @@ Control LED form web dashboard
 Introduction
 ------------------
 There are 2 main methods of achieving this goal.
+
 - By using Inject Block.
 - By using Dashboard Switch.
+
 From both of this methods we discuss about second method .
 
 Methodology
