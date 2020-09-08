@@ -1054,6 +1054,87 @@ Once in the dashboard you can toggle the switch you just setup on and off to con
 Copy the your Dashboard URL and this can be accessed via the internet to display text onto your Magicbit Display from anywhere in the World.
 **Note:: make a flow to control all four LED's of the magicbit at once using web dashboard** 
 
+Display input parameters on web dashboard
+=====================================
+Introduction
+-----------------
+In this example we doing that display some data on web dashboard which sent by Magicbit at real time. To achieve this goal we need to feed some signal to magicbit. For this purpose we used two push buttons of magicbit to generate digital signals. The web dashboard display the state of the two buttons.
+Methodology
+Start and Open the Playground. Next make sure your Magicbit is connected to the internet and plugged-in and also linked to your account through Device Manager.
+- Setting Up the Digital In Block
+Drag & drop the Inject block from the input nodes section on the left of the screen to the Flow.
+
+.. image::https://hackster.imgix.net/uploads/attachments/1188443/screenshot_(109)_UQs3Md4dUN.png?auto=compress%2Cformat&w=740&h=555&fit=max
+
+Double-click on the Digital In block and type or paste your unique Device id from the Device Manager Tab on your Magicblocks account. (This will link the digital in with the Magicbit )
+
+.. image:: https://hackster.imgix.net/uploads/attachments/1188445/screenshot_(110)_43KFWV7zgn.png?auto=compress%2Cformat&w=740&h=555&fit=max
+
+.. image:: https://hackster.imgix.net/uploads/attachments/1188444/screenshot_(91)_DpO0mgTxcX.png?auto=compress%2Cformat&w=740&h=555&fit=max
+
+Choose 'PB Right(34)' or 'PB Left(35)' from the PIN drop-down menu.(Connects with the Right or Left Push Button on your Magicbit)
+
+.. image:: https://hackster.imgix.net/uploads/attachments/1188446/screenshot_(111)_0gFNEimAaB.png?auto=compress%2Cformat&w=740&h=555&fit=max
+
+Select the Method as Interrupt from the drop-down menu
+
+- Setup the Change Block
+
+This Node is used to change the 1 & 0 signal input from the Digital In node to any text you wantDrag & Drop the Change Block from the function nodes section on the left of the screen to the flow.
+
+.. image:: https://hackster.imgix.net/uploads/attachments/1188452/screenshot_(96)_Ad58vq13G5.png?auto=compress%2Cformat&w=740&h=555&fit=max
+
+Add new rule from the '+' Button to use 2 rules
+
+.. image:: https://hackster.imgix.net/uploads/attachments/1188453/screenshot_(97)_ZhqXgK19dw.png?auto=compress%2Cformat&w=740&h=555&fit=max
+
+Change the function of both of the rules from Set to Change from the drop-down menu.
+
+.. image:: https://hackster.imgix.net/uploads/attachments/1188454/screenshot__98__haa0muUEwD.png?auto=compress%2Cformat&w=740&h=555&fit=max
+
+Next change the 'Search for' function from String(text) to Number in both of the rules. And make sure the 'Replace with' function is set to String(text).
+
+.. image:: https://hackster.imgix.net/uploads/attachments/1188455/screenshot__99__kZJUzWE5C2.png?auto=compress%2Cformat&w=740&h=555&fit=max
+
+lets Set up the rules.
+
+- The First Rule to search for '1' in signal input and replace it with our text (e.g. 'Right Button Released' or 'Right OFF')
+- The Second Rule to search for '0' in signal input and replace it with our text (e.g. 'Right Button Pressed' or 'Right ON')
+
+The text 'Right' or 'Left' depends on the Push Button which is linked to the Digital In Node in the above step.
+
+(image below shows an example of the rules)
+
+.. image:: https://hackster.imgix.net/uploads/attachments/1188456/screenshot_(114)_nM5J4AriDy.png?auto=compress%2Cformat&w=740&h=555&fit=max
+
+- Setup the Text Block
+Drag & drop the Text block from the dashboard nodes section to the Flow
+
+.. image:: https://hackster.imgix.net/uploads/attachments/1188458/screenshot_(119)_DyGxifBpOo.png?auto=compress%2Cformat&w=740&h=555&fit=max
+
+Double-click on the text node and set up a basic dashboard ui [user- interface] from the drop-down menu and a name for your field.
+
+.. image:: https://hackster.imgix.net/uploads/attachments/1188459/screenshot_(115)_AcZ0DiNtm1.png?auto=compress%2Cformat&w=740&h=555&fit=max
+
+now Setup the same node configuration for the other Push Button. So Copy & Paste the 3 nodes.
+
+.. image:: https://hackster.imgix.net/uploads/attachments/1188460/screenshot_(116)_52OOMz0vPE.png?auto=compress%2Cformat&w=740&h=555&fit=max
+
+Change the PIN on the Digital In node for the other Push Button. Change the Text in Change node from 'Right' to 'Left' or vice versa.
+
+- Finally Deploying the Blocks
+
+Make sure all the blocks are connected. Click on Deploy button on the top right-hand corner of the screen. After deploying go to the dashboard ui by clicking the link to dashboard URL on the top right-hand corner of the screen.
+
+.. image:: https://hackster.imgix.net/uploads/attachments/1188462/screenshot_(96)_crop_j20qwrEkjH.png?auto=compress%2Cformat&w=740&h=555&fit=max
+
+Press the Left or Right Push Buttons and the text will be displayed on the Dashboard.
+
+.. image:: https://hackster.imgix.net/uploads/attachments/1188464/screenshot_(117)_cTYK9glhGi.png?auto=compress%2Cformat&w=740&h=555&fit=max
+
+.. image:: https://hackster.imgix.net/uploads/attachments/1188466/screenshot_(118)_f2j1lf1swQ.png?auto=compress%2Cformat&w=740&h=555&fit=max
+
+
 *************************
 Playground 
 *************************
