@@ -994,8 +994,8 @@ Analog In
 
 .. image:: https://github.com/magicbitlk/Magicbit-Magicblocks.io/blob/master/Images/analogIn.PNG?raw=true
 
-
 This block will read analog value of the ADC pin of the module. Similar to the digital in block you need to set method to read the value. Any input sent to the block will serve as the trigger.
+
 1. Poll - Block need to triggered to get input status. Any input will serve as a trigger. (eg:inject block)
 2. Interrupt - If there is any change greater or less than threshold value of Magicbit block will output the analog value
 
@@ -1011,7 +1011,39 @@ This block will read analog value of the ADC pin of the module. Similar to the d
 - Output
     - Value of the pin from 0 to 4096 (12bit ADC)  {"payload": 965}
 
+Control LED form web dashboard
+=============================================
+Introduction
+------------------
+There are 2 main methods of achieving this goal;
+1)By using Inject Block.
+2)By using Dashboard Switch.
+From both of this methods we discuss about second method .
 
+Methodology
+------------------
+_ Setting Up the Switch Block
+1.Drag & drop the Switch block from the dashboard nodes section to the Flow.
+.. image:: https://hackster.imgix.net/uploads/attachments/1186197/screenshot_(65)_agR2N5xHmh.png?auto=compress%2Cformat&w=740&h=555&fit=max
+2.Double-click on the Switch node and set up a basic dashboard ui [user- interface] from the drop-down menu and a name for your field.
+
+3.the Mode as number input from the drop-down menu for both On and Off. And set on payload as 1 and off payload as 0.
+
+.. image:: https://hackster.imgix.net/uploads/attachments/1186198/screenshot_(66)_pC5mHGJOdF.png?auto=compress%2Cformat&w=740&h=555&fit=max
+_ Setting Up the Digital Out Block
+1.Drag & drop the Digital out block from the Magicbit nodes section on the left of the screen to the flow.
+
+2. Double-click on the digital out block and type or paste your unique Device id from the Device Manager Tab on your Magicblocks account. [ This will link the digital out block with your Magicbit ]
+.. image:: https://hackster.imgix.net/uploads/attachments/1186199/screenshot_(67)_zMgUMg4CA9.png?auto=compress%2Cformat&w=740&h=555&fit=max
+_ Finally Deploying the Blocks & Using the Dashboard UI to Access It [Method 2]
+1.Connect the Switch block with the Digital Out node.
+2.Click on Deploy button on the top right-hand corner of the screen.
+3.After deploying go to the dashboard ui by clicking the link to dashboard URL on the top right-hand corner of the screen.
+.. image:: https://hackster.imgix.net/uploads/attachments/1186204/screenshot_(70)_6UfxCC6pwj.png?auto=compress%2Cformat&w=740&h=555&fit=max
+.. image:: https://hackster.imgix.net/uploads/attachments/1186205/screenshot_(71)_4nQryObhwR.png?auto=compress%2Cformat&w=740&h=555&fit=max
+4.Once in the dashboard you can toggle the switch you just setup on and off to control the LED you assigned to the digital out block.
+.. image:: https://hackster.imgix.net/uploads/attachments/1186208/screenshot_(73)_hD62lHh6uu.png?auto=compress%2Cformat&w=740&h=555&fit=max
+Copy the your Dashboard URL and this can be accessed via the internet to display text onto your Magicbit Display from anywhere in the World.
 
 
 *************************
