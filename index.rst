@@ -153,7 +153,7 @@ The open-source Arduino Software (IDE) makes it easy to write code and upload it
 Let's get some general idea about Arduino IDE preview.
 Below picture shows the startup preview of the Arduino IDE. In this at the middle you have your text editor and at the top left side there is a menu bar which have several options.
 
-.. image:: https://github.com/magicbitlk/workshop-magicbit-new//raw/master/Resources/IDE.png
+.. image:: https://github.com/magicbitlk/workshop-magicbit-new/raw/master/Resources/IDE.png
 
 Let's look at options in the Arduino menu bar.
 
