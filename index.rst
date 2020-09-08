@@ -155,7 +155,7 @@ The open-source Arduino Software (IDE) makes it easy to write code and upload it
 Let's get some general idea about Arduino IDE preview.
 Below picture shows the startup preview of the Arduino IDE. In this at the middle you have your text editor and at the top left side there is a menu bar which have several options.
 
-.. image:: https://lh3.googleusercontent.com/proxy/aM_y6UYuZLGPe7rfvl_btOyqOxqYtTJf-x-Od6YndKpLsJGy3LcG_45j7EThYo22aGn9Ayu7mUrilq7WINJwqGTLD9IX7PSoupj1IbDzlvWV3wUzlQ
+.. image:: https://github.com/magicbitlk/Magicbit-Arduino/raw/master/Resources/IDE.png
 
 Let's look at options in the Arduino menu bar.
 
@@ -803,9 +803,6 @@ You can also create attractively online dashboards online without any coding
 ***************
 Getting Started
 ***************
-
-
-.. image:: https://github.com/magicbitlk/Magicbit-Magicblocks.io/blob/master/Images/Setup.png?raw=true
 
 
 Create Magicblocks.io Account
