@@ -1,17 +1,4 @@
-latex_elements = {
-# The paper size ('letterpaper' or 'a4paper').
-    'papersize': 'a4pape',
 
-# The font size ('10pt', '11pt' or '12pt').
-    'pointsize': '122pt',
-
-# Additional stuff for the LaTeX preamble.
-    'preamble': r'''
-        \usepackage{charter}
-        \usepackage[defaultsans]{lato}
-        \usepackage{inconsolata}
-    ''',
-}
 
 ****************
 What is Magicbit
