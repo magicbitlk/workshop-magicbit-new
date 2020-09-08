@@ -1015,7 +1015,7 @@ Control LED form web dashboard
 =============================================
 Introduction
 ------------------
-There are 2 main methods of achieving this goal;
+There are 2 main methods of achieving this goal.
 - By using Inject Block.
 - By using Dashboard Switch.
 From both of this methods we discuss about second method .
@@ -1050,7 +1050,7 @@ Once in the dashboard you can toggle the switch you just setup on and off to con
 .. image:: https://hackster.imgix.net/uploads/attachments/1186208/screenshot_(73)_hD62lHh6uu.png?auto=compress%2Cformat&w=740&h=555&fit=max
 
 Copy the your Dashboard URL and this can be accessed via the internet to display text onto your Magicbit Display from anywhere in the World.
-
+**Note:: make a flow to control all four LED's of the magicbit at once using web dashboard** 
 
 *************************
 Playground 
