@@ -1059,7 +1059,10 @@ Display input parameters on web dashboard
 Introduction
 -----------------
 In this example we doing that display some data on web dashboard which sent by Magicbit at real time. To achieve this goal we need to feed some signal to magicbit. For this purpose we used two push buttons of magicbit to generate digital signals. The web dashboard display the state of the two buttons.
+
 Methodology
+-------------
+
 Start and Open the Playground. Next make sure your Magicbit is connected to the internet and plugged-in and also linked to your account through Device Manager.
 - Setting Up the Digital In Block
 Drag & drop the Inject block from the input nodes section on the left of the screen to the Flow.
