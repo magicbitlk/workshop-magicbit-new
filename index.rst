@@ -146,8 +146,6 @@ In electronics and technology, a reset button is a button that can reset a devic
 Getting Started
 ***************
 
-
-
 .. image:: https://github.com/Magicbitlk/Magicbit-Arduino/raw/master/Resources/Arduino1.6.4_IDE_small.png
 
 
