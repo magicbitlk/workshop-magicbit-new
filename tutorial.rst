@@ -1022,21 +1022,22 @@ From both of this methods we discuss about second method .
 
 Methodology
 ------------------
-_ Setting Up the Switch Block
+- Setting Up the Switch Block
 Drag & drop the Switch block from the dashboard nodes section to the Flow.
+
 .. image:: https://hackster.imgix.net/uploads/attachments/1186197/screenshot_(65)_agR2N5xHmh.png?auto=compress%2Cformat&w=740&h=555&fit=max
 
 Double-click on the Switch node and set up a basic dashboard ui [user- interface] from the drop-down menu and a name for your field. the Mode as number input from the drop-down menu for both On and Off. And set on payload as 1 and off payload as 0.
 
 .. image:: https://hackster.imgix.net/uploads/attachments/1186198/screenshot_(66)_pC5mHGJOdF.png?auto=compress%2Cformat&w=740&h=555&fit=max
 
-_ Setting Up the Digital Out Block
+- Setting Up the Digital Out Block
 
 Drag & drop the Digital out block from the Magicbit nodes section on the left of the screen to the flow. Double-click on the digital out block and type or paste your unique Device id from the Device Manager Tab on your Magicblocks account. [ This will link the digital out block with your Magicbit ]
 
 .. image:: https://hackster.imgix.net/uploads/attachments/1186199/screenshot_(67)_zMgUMg4CA9.png?auto=compress%2Cformat&w=740&h=555&fit=max
 
-_ Finally Deploying the Blocks & Using the Dashboard UI to Access It
+- Finally Deploying the Blocks & Using the Dashboard UI to Access It
 
 Connect the Switch block with the Digital Out node. Click on Deploy button on the top right-hand corner of the screen. After deploying go to the dashboard ui by clicking the link to dashboard URL on the top right-hand corner of the screen.
 
