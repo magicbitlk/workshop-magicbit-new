@@ -944,7 +944,8 @@ Every block has a property called Device ID where you need to specify to which d
 Digital Out
 -----------
 
-.. image:: https://github.com/magicbitlk/Magicbit-Magicblocks.io/blob/master/Images/digitalOut.png?raw=true
+.. image:: Images/digitalOut.PNG
+
 
 This block is used to set a digital output pin to 1 or 0 based on the input. An input of 1 or true will make the configured pin go HIGH and vice versa
 
