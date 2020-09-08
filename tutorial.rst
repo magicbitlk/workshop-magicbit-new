@@ -1016,8 +1016,8 @@ Control LED form web dashboard
 Introduction
 ------------------
 There are 2 main methods of achieving this goal;
-1)By using Inject Block.
-2)By using Dashboard Switch.
+- By using Inject Block.
+- By using Dashboard Switch.
 From both of this methods we discuss about second method .
 
 Methodology
@@ -1027,13 +1027,13 @@ Drag & drop the Switch block from the dashboard nodes section to the Flow.
 
 .. image:: https://hackster.imgix.net/uploads/attachments/1186197/screenshot_(65)_agR2N5xHmh.png?auto=compress%2Cformat&w=740&h=555&fit=max
 
-Double-click on the Switch node and set up a basic dashboard ui [user- interface] from the drop-down menu and a name for your field. the Mode as number input from the drop-down menu for both On and Off. And set on payload as 1 and off payload as 0.
+Double-click on the Switch node and set up a basic dashboard ui (user- interface) from the drop-down menu and a name for your field. The Mode as number input from the drop-down menu for both On and Off. And set on payload as 1 and off payload as 0.
 
 .. image:: https://hackster.imgix.net/uploads/attachments/1186198/screenshot_(66)_pC5mHGJOdF.png?auto=compress%2Cformat&w=740&h=555&fit=max
 
 - Setting Up the Digital Out Block
 
-Drag & drop the Digital out block from the Magicbit nodes section on the left of the screen to the flow. Double-click on the digital out block and type or paste your unique Device id from the Device Manager Tab on your Magicblocks account. [ This will link the digital out block with your Magicbit ]
+Drag & drop the Digital out block from the Magicbit nodes section on the left of the screen to the flow. Double-click on the digital out block and type or paste your unique Device id from the Device Manager Tab on your Magicblocks account. ( This will link the digital out block with your Magicbit )
 
 .. image:: https://hackster.imgix.net/uploads/attachments/1186199/screenshot_(67)_zMgUMg4CA9.png?auto=compress%2Cformat&w=740&h=555&fit=max
 
