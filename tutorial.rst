@@ -905,8 +905,7 @@ Let's start magic with displaying a text on Magicbit display.
 - Click deploy
 - Click button in Inject node to see the magic. You can set any text from any where in the world!!!
 
-Watch on Youtube
-https://www.youtube.com/watch?v=6y6Ieq8vZbo
+
 
 
 
