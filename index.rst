@@ -1,1104 +1,539 @@
+==================================
+Introduction to Internet of Things 
+==================================
+
+************
+Introduction
+************
 
 
-****************
-What is Magicbit
-****************
+IoT stands for Internet of Things.  As per the IEEE ( IEEE, ”Internet of Things” , 2014) Internet of Things is defined as “A network of items embedded with sensors which are connected to the internet”,
 
-.. image:: https://github.com/magicbitlk/Magicbit-Arduino/raw/master/Resources/magicbit_unit.png
+The usual internet we all know is a network of networks which comprise of computers, servers and many networks. For example when you access Youtube.com you access through your computer and retrieve data from another server which again a computer via the network.
+With the advancement of computer networks many device are connected to this internet. For example now your  ,Tab, home thermostat, cameras and other devices & appliances are connected to the internet. These connected devices through the internet creates a broader network of computers and devices is now capable of transferring data between devices through the network even without human interaction. This is called the Internet of Things. This can be a small device as small as a pill or can be big as an aero plane.
+If you take a GPS tracker on a vehicle, you can monitor the vehicle in real time. Now you can check your home security camera feed from your phone. Another classic example is the Smart home concept of connected smart devices that can be used for home automation. This larger network of devices and appliances  collectively as a network is called the internet of Things.
+Internet of things will be a dominant force in the industries in future. It is predicted that about 50 Billion devices will be connected to internet by end of 2020. Those will generate 4.4 zettabytes of data. IoT industry will grow to a 14.4 Billion dollar industry by 2025.
+
+************
+Industry 4.0
+************
+
+Industry 4.0 is the name given for the next technical revolution that will take place with the increasing blend of smart technologies with transitional  or legacy industries.
+Some of the key aspects of this will be increased automation, speed and accurate communication, efficient real time monitoring and machines which can communicate without human interaction. Internet of Things or IoT will play a major role in this technology transformation because massive scale machine to machine communication is the concept behind IoT. The other technologies like robotics, Artificial Intelligence(AI), Machine Learning(ML) will also be a quintessential part of this technical revolution. 
+
+The increase of automation and self-monitoring machines is in industries has already begun reducing human workforce in manufacturing related industries. 
+
+The replacement of human involvement in industries will urge to direct the human work force to find more creative solutions and innovations for problems human kind face in becoming more efficient with supplies to the growing population and demand throughout the world. This is why the most required skills in industry 4.0 would be creativity and innovation.
+
+*********
+Use cases
+*********
+
+There are many applications of IoT we can already see in the environment. 
+
+Smart Home
+==========
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/1.jpg
 
 
+One of the most popular applications of IoT is the smart home automation systems. Smart home concept is developed with many connected devices installed in a house to create greater convenience. Some of the features can be listed as below.
 
-This device is an Integrated development platform for learning and solution designing of electronics, robotics, Internet of Things and coding. The device can interact with a host of sensors such as light sensors, fire sensors, motion detectors etc. and output devices such as LEDs, switches, buzzers, speakers, motors etc. The hardware can be programmed using industry standard integrated development environment (IDE) that runs on PCs, Tablets, Mobile devices, or web platforms. This device supports a large number of programming platforms such as C++, python, scratch, magicblocks, mblock and codda, Hence the learning curve to learn to operate and utilize this device is shorter. Ardunio & MicroPython are for users with prior programming experience. Magicbit provides extension for mBlock3 for kids without programming knowledge. Codda is a visual programming language which same time can experience the true coding. Magicblocks is a NodeRed based platform for IoT solution design for any user group.
+- Smart TVs that can be connected to the internet and works with voice recognition or gesture control. Any popular brand of TVs now has smart TVs.
+- Smart lighting with automated operation with the condition of ambient light and remote controlling from outside the house. Example: Phillips Hue bulbs
+- Smart thermostats to monitor and control home temperature. Example: Nest thermostat
+- Smart door Locks to detect , authenticate and access control home users and selected visitors.
+- Smart security cameras with remote monitoring and motions sensing.
+- Pet care systems to automatically feeding and remote monitoring of pets.
+- Home gardening systems with smart irrigation and health parameter monitoring.
+- Smart home appliances such as coffee makers, refrigerators, air conditioners, washing machines etc.
+
+Smart Grids
+===========
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/2.jpg
+
+The electrical power grids are another areas where the IoT technologies are disrupting around the globe. The IoT technology will optimize the operation of generation, distribution and consumption of electrical power in the grid. This will be done using a combination of smart meters, smart appliances and energy source management. The Smart grid will have the below features.
+
+- Smart metering with each electricity consumption is measured in real time using remote monitoring enabled meters. This data also used to correctly identify the demand patterns.
+- Smart appliances will consume the energy more efficiently and can be programmed to match the demand profile of the grid.
+- Power generation and distribution can also be automated in response to the demand on real time with the inputs of the massive IoT network. This will be used to load balance the network specially due to a high number of independent renewable energy sources.
+- Smart grids can be used to analyze and create better cost structures
+
+Industrial IoT (IIoT)
+=====================
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/3.png
+
+The increase of nodes in industries which can communicate will be used for automations and monitoring reducing the human interaction of human work force in future industries. This transformation of industries with IoT is called the Industrial Internet of Things. Mainly the nodes in an IIoT environment will be acting as sensor nodes collecting data and the processed data through edge computing devices or cloud applications will be used for automations and monitoring dashboards.
  
-This device also has the following special features:
+Monitoring Applications
+=======================
 
-- In-built battery charger, WiFi & Bluetooth connectivity;
-- Integrated sensors and actuators to enable users to test and design projects without additional components;
-- An internal OLED display;
-- Plug & play feature to easily connect accessories;
-- An enclosure for productization of designs
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/5.jpg
 
-Brain of the Magicbit is ESP32, which is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and dual-mode Bluetooth. Therefore any project or document available on internet which supports ESP32 is supported for Magicbit as well.
+A simple application of IoT can be used for a temperature monitoring application. For example the temperature at a given location or a space would be a key measurement in certain applications such a agriculture and commercial storages. In these applications a temperature sensor which can be connected to the internet will be used and the data is transmitted to a cloud application via internet protocols. The data can be visualized in real time based on the values generated through the sensor. This is a simple sample application. The scaled up version of this implementation would be a weather station network with IoT.
 
-*****************
-Hardware
-*****************
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/6.png
 
-Specifications
-==============
+ 
 
-- **Processor** - Xtensa dual-core
-- **Speed**- Up to 240Mhz
-- **Flash Memory**-4MB
-- **Ram**-520KB
-- **Inputs**-Pushbutton, LDR, Potentiometer
-- **Outputs**-LEDs, OLED Display, Buzzer
-- **Other**- Dual Motor Driver, Li-Ion Charger
-- **Connectivity**- USB, WiFi, Bluetooth
+Smart bulb/Switch is also a IoT based implantation like this. The bulbs or switches can be remotely controlled and even at site can be controlled without the manual intervention mostly using mobile devices.
+ 
+==========
+Components of Internet of Things
+==========
 
+Internet of Things has two main components Internet and Things. Applications, protocols and interconnected network is called the Internet and every component with connectivity to the internet is referred to as a “Thing”.  In technical terms, according to IEEE IoT architecture has 3 components.
 
-Layout
-======
+- Physical 
+- Gateway
+- Services
 
-.. image:: https://github.com/magicbitlk/Magicbit-Arduino/raw/master/Resources/features_frontTP.png
-.. image:: https://github.com/magicbitlk/Magicbit-Arduino/raw/master/Resources/features_backTP.png
+The physical layer is comprised of devices, gateway is the network used for communication and services are the data handling part in application layer which is commonly is the cloud.
 
+ .. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/7.PNG
 
-Pinmap
-======
+This can be simply identified by a common example of an IoT implementation.  GPS based vehicle tracking system is a basic example of an IoT system. Each vehicle is comprised of a GPS device and the network is the GSM network which transmit the data and the data is handled though an application in a server which is basically the service or the cloud. 
 
+ .. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/8.jpg
 
-.. image:: https://github.com/Magicbitlk/arduino-esp32/raw/master/docs/pinout.png
+******
+Device
+******
 
+Devices are the hardware devices any other physical device connected to the IoT network. This could include below categories of devices.
 
-Features
+- Sensors – Temperature, Humidity, proximity, GPS, accelerometer
+- Actuators- Motors, bulbs, Switches
+- Human interface devices – household appliances, PCs, Tabs
+- Computers and smart devices
+- Network devices- routers, switches
+
+The physical devices mainly do the analog data conversion to digital signals and collect data. The devices have remote connectivity and real time data transmission with secured channels.
+
+*******
+Network
+*******
+
+Connecting of billions of new devices to the internet is a great expansion of the network. IPV6 plays a major role in connecting these devices with scalable unique addresses for all. Different protocols are used to for communication like http, https and light weight protocols like ZeroMQ and MQTT. 
+The devices sometimes act and edge computing nodes processing certain amounts of data to have better solutions but in most cases the data is transmitted to the cloud at once where connectivity plays a major role. This is where the wired and wireless technologies comes into play. Below are some of the most popular communication technologies. 
+•	Wireless Communication – Bluetooth, NFC,  Wifi, ZigBee,  LTE, 5G
+•	Wired Communication -  Ethernet, Power line communication(PLC)
+
+ .. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/10.jpg
+ 
+*****
+Cloud
+*****
+
+Cloud is the application and presentation layer of the IoT architecture. The servers and computes processing the data are referred to as the cloud platform here. IoT data storing, processing and presentation part happens here. For example a dashboard is a web based representation of a data set collected through many or single IoT node. Below is a screenshot of an implementation of a dashboard done with ThingsBoard platform.
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/11.png
+
+========
+Security
 ========
 
 
+Security is one of the most controversial areas related to IoT. The common security challenges in traditional internet such as authentication, data leakage, unauthorized access and many other aspects are related to IoT as well. Perhaps the data transmission without encryption is one of the major issues in many cases. The operational and computation limitations of IoT devices may limit the functionality to enforce greater security measures at the device end. A popular example is the Mirai botnet incident in 2016 where it is reported that nearly 300,000 IoT devices were infected to an attack. 
+The security measures have to be implemented in each of the layers of IoT starting form policy level changes to protocol and program level changes.
+ 
+IoT Security Foundation was launched in 2015 to ensure the future of the security aspects of IoT. The rapid growth of IoT will demand for better secured platforms and channels for security of data as well.
 
-LED
----
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/12.png
 
+	
+============================
+Components of Cloud platform 
+============================
 
-There are four leds on backside of the Magicbit with color red, yellow, green & blue. A LED(light-emitting diode) is a semiconductor light source that emits light when current flows through it. Blinking a LED is the hello world to the microcontroller programming world.
+***********************
+What is Cloud Computing
+***********************
 
+Cloud Computing technologies are emerging as a common way of provisioning infrastructure services, applications and general computing and storage resources on-demand. (IEEE)
+The term cloud stands for the on-demand available computer system resources connected through a network which operates without human direct human management. Cloud is an essential part of the IoT architecture as mentioned before. The Cloud also comprises several components with different features. We need the cloud platform to handle, processing, visualize and store the data from IoT networks. 
+Although there could be many components and architectures related to cloud platforms, here we refer to the cloud platforms related to IoT only. The models of cloud computing used with IoT is commonly Platform as a service(PaaS) or Infrastructure as a Service(IaaS).
+Below are some of the key components of any cloud platform with IoT.
 
-BUTTON
-------
+Device manager - Provisioning/ Monitoring
+=========================================
 
-There are two buttons on the front of the Magicbit. The push-button is a component that connects two points in a circuit when you press it. The example turns on an LED when you press the button.
+The IoT end devices will be connected to the cloud application. The authentication of devices to retrieve data should be done by the platform by registering only specified and known devices related to the network. This registration of devices happen through the device manager of the cloud platform.
+The IoT devices will be registered through device managers by unique IDs and keep the devices connected to the platform by authenticating the correct devices. The security handling part of encryption is also handled by the device management based on keys or certificates.
+Device manager will also display the status of the devices and the total registered device list for a cloud application. Some management applications provide alerts in the event of a device failure. 
+To summarize below are the functions of the device manger.
 
+- Registration of IoT devices for cloud platform with defined parameters like device names
+- Management of devices such as add, remove or modify remotely
+- Monitoring of IoT devices connected
+- Alerts on device status and operation
+- Device authentication and data encryption
 
+Database
+========
+ 
+The database in a cloud application is the primary data storage. This process is also called as data ingestion in scenarios such as IoT platforms. This means that data is transferred from one location to another to analyze and process further. In IoT architecture while some data processing might happen in edge computing devices the majority of the data chunks are moved to the cloud. This data is stored in databases to analyze and processing. The on demand nature of cloud platform provides the elasticity for the databases to adjust based on the requirement with or without human intervention.
 
-LDR
----
+Analytics 
+=========
 
-There is a LDR on the front of the Magicbit. LDR(Light Dependent Resistor) is a light-controlled variable resistor. The resistance of a photo-resistor decreases with increasing incident light intensity. You can measure light intensity using LDR as a analog output.
+The process of data ingestion can happen in real time or in batches or as a combination of both. The analysis part is occurred in cloud based on the system requirement. The batch data are imported on regular intervals as aggregated data and processed in scheduled intervals. The real time data analysis is performed for very time specific and time sensitive operations. For example if we take a vehicle tracking system, the tracking should happen in real time. The data can be processed to give meaningful values using the defined formulas which is called analysis. Sometimes the analysis will require to represent the real time values over a period. 
+Some of the most popular technologies that are currently used for analytics is big data analytics, machine learning and AI.
 
+Dashboard
+=========
 
-POTENTIOMETER
--------------
+Dashboards are the representation of processed data. The visualization of the data in the presentation layer of the architecture happens through the dashboard. A dashboard could have graphs, tables, values, maps, diagrams or any other graphic which displays a meaning value of processed data of the IoT network. 
+This could be a online dash board or hosted in a single location. However most IoT related dashboards are accessible over the internet with multiple devices such as computers, Tabs or mobiles.
+Below is a sample picture of a weather station dashboard.
 
-The potentiometer is a component with rotating contact that forms an adjustable voltage divider. A potentiometer is a simple knob that provides a variable resistance, which we can read into the Magicbit board as an analog value.
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/13.png
 
+********************************************************
+Popular Cloud Platforms 
+********************************************************
 
-DISPLAY
--------
+There are many popular Iot platforms in use as of now. Below are some of the most popular cloud platforms related to IoT.
 
-OLED (Organic Light Emitting Diodes) is a flat light emitting technology. OLED display has a film of organic compound that emits light in response to an electric current.You can display varoius graphics and text on the display.
+Azure IoT
+=========
 
-BUZZER
-------
+Azure IoT is the tech giant Microsoft’s IoT platform. This has predefined App templates tailored for end user business needs. They have some prebuilt applications for different business verticals. Azure also claims to be a scalable, reliable and trusted IoT cloud used by many multinational corporations. 
 
-There is a buzzer on the front of the Magicbit. Buzzer is an electronic device commonly used to produce sound.
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/14.png
+ 
+AWS IoT
+=======
 
+Being one of the leading cloud service providers AWS IoT platform with more added features such as security, multiple supported other services and superior AI integration. 
 
-
-BATTERY
--------
-
-There is a Battery connector on the front of the Magicbit.Single cell rechargeable li-ion battery (3.7V) can be plugged in to a battery connector to puwer the Magicbit. Battery can be recharged by providing USb power to the Magicbit.
-
-
-MODULES
--------
-
-There are four module connectors on the edge connector of the Magicbit, which we refer to as ports. Which can connect various accessories to Magicbit board and program to work with Magicbit. Matching accessory pin connector color marked on the Magicbit. As an example module with blue pin connector should plug in to blue port of the Magicbit.
-
-
-
-USB
----
-
-There is a micro USB port on the back of the Magicbit.Connect the micro USB port to a mobile phone charger or computer through a cable and it will draw power required for the board to function and it also used program magibit and data transferring with a computer.
-
-WiFi
-----
-
-WiFi is a technology that uses radio waves to provide network connectivity. Magicbit consists with wifi module. WiFi  technology has widely spread lately and you can get connected almost anywhere; at home, at work, in libraries, schools, airports, hotels and even in some restaurants enabling IOT connectivity capabilities.
-
-
-BLUETOOTH
----------
-
-
-Bluetooth is a wireless technology standard used for exchanging data between fixed and mobile devices over short distances using short-wavelength UHF radio waves.
-Magicbit consists with wifi module which enables IOT connectivity capabilities
-
-EXPANSION HEADER
-----------------
-
-Magicbit can connect various electronic sensors, electronically controlled actuators,etc to Magicbit via these external connectors
-
-CROCODILE CLIP
---------------
-
-
-Magicbit crocodile clip connectors used to connect an electrical cable to a battery or some other component. Functioning much like a spring-loaded clothespin, the clip's tapered, serrated jaws are forced together by a spring to grip an object
-
-RESET BUTTON
-------------
-
-In electronics and technology, a reset button is a button that can reset a device. On Magicbit, the reset button restarts the Magicbit’s programme
-
-
-***************
-Getting Started
-***************
-
-.. image:: https://github.com/Magicbitlk/Magicbit-Arduino/raw/master/Resources/Arduino1.6.4_IDE_small.png
-
-
-The open-source Arduino Software (IDE) makes it easy to write code and upload it to the board. It runs on Windows, Mac OS X, and Linux. The environment is written in Java and based on Processing and other open-source software.Arduino IDE is not only used for programme Arduino boards but also other development boards like esp32, magicbita dn so on.
-Let's get some general idea about Arduino IDE preview.
-Below picture shows the startup preview of the Arduino IDE. In this at the middle you have your text editor and at the top left side there is a menu bar which have several options.
-
-.. image:: https://github.com/magicbitlk/workshop-magicbit-new/raw/master/Resources/IDE.png
-
-Let's look at options in the Arduino menu bar.
-
-- File- As the name suggests you can do the documentary things with this option. You can open new sketch, close, save that sketch, open existing sketch or example sketch and change system preferences.
-- Edit- With this you can change your font size, indentations and some writing options
-- Sketch- This is important as compilation, uploading and library options are available in this.
-- Tools- Hardware setup is done in this option. You can change the board type, programmer type and connecting port name with this and configure other hardware settings.
-- Help- This option is used for connecting with Arduino references and getting help.
-
-Below the menu bar you have some shortcut keys (command keys). First one is verify key button. By using this you can know your code is grammarly correct or not according to programming language rules. Using the upload button you can do both the compile and upload process at same time. 
-The right top corner have serial monitor icon. This is very important option. This is used to communicate between Arduino IDE and your development board. You can send data to and watch the data which is sent by the development board from this. Under the serial monitor icon we can see some small icon options. This option is used to set the configurations of the new tabs and existing tabs.
-At the bottom side you can see the debugging console. This shows the result of the compilation and uploading and some other messages which are very useful for debugging.
-
-In the text editor space we can write any Arduino program. This is our playground. We can write any related code in that space. Here are two sections. One is void setup and the other one is void loop. In the void setup we write which we want to execute at the start and one time. So we write pin configurations and other library configurations in the void setup. Our main algorithm is in the void loop. As its name suggests the processor execute this loop section repeatedly at every time. So we write the things which we want to execute at every time in this section.
-After writing the code go to tools->select your board type and select your port name correctly. Then click the upload button to upload the code.
-
-`Learn more about Arduino <https://www.arduino.cc/en/main/software>`
-
-Magicbit is based on ESP32 and Arduino core for the Magicbit forked from the `espressif/arduino-esp32  <https://github.com/espressif/arduino-esp32>`_
-
-
-
-
-Installation Instructions
-=========================
-
-- Relase Link -https://github.com/Magicbitlk/arduino-esp32/releases/download/V1.0.0/package_Magicbit_index.json
-
-- Install the current upstream Arduino IDE at the 1.8 level or later. The current version is at the [Arduino website](http://www.arduino.cc/en/main/software).
-- Start Arduino and open Preferences window.
-- Enter one of the release links above into Additional Board Manager URLs field. You can add multiple URLs, separating them with commas.
-- Open Boards Manager from Tools > Board menu and install Magicbit platform (and don't forget to - - select Magicbit from Tools > Board menu after installation).
-
-
-Powering Up
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/15.png
+ 
+ThingsBoard
 ===========
 
-     Magicbit can be powerup by either connecting USB cable or connecting battery. For programming USB cable must be connected to the computer. For the first time powering up Magicbit self test program will be running on the Magicbit and you can see the features available and functional tests on Magicbit display.       
+ThingsBoard is an open source IoT platform which supports both cloud and on-premise deployments. The platform has some powerful features of data collection, processing, visualization and device management. This platforms enable connectivity through standard protocols such as HTTP, MQTT and CoAP.
+  
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/16.png
 
-To check whether drivers are correctly installed open the Ardunio IDE and go the Tools menu. There should be a port (Eg:COM1) shown when plugging Magicbit to the computer as shown below. If not please follow Installation drivers section.
+Google Cloud IoT
+================
 
-.. image:: https://github.com/Magicbitlk/Magicbit-Arduino/raw/master/Resources/Ardunio_port.png
+Google Cloud IoT is the IoT cloud version from google which is supports the IoT architecture as below.
+ 
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/17.png
 
-
-
-Installation Drivers (Optional)
-===============================
-
-
-Magicbit has CH340 chip as USB-Serial converter which driver already packaged with Ardunio IDE. If port not shown in the Arduino as shown below please install `driver <https://github.com/Magicbitlk/Magicbit-Arduino/blob/master/Resources/CH34x_Install_Windows_v3_4.EXE>`_
-
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/18.png
 
 
-First Project
+
+======
+Device
+======
+
+************
+Introduction
+************
+
+Sensors/Edge computing devices
+==============================
+
+IoT devices are the end nodes of a the network. These are sometimes referred to as constrained devices since mostly these are sensors or actuators. They are connected through the network to enable M2M communication in IoT. The communication methods of Bluetooth, wifi and ZigBee are come of the common communication technologies used by these end nodes. Some of these nodes are collectively act as a mesh network forming large IoT networks as well. 
+The end hardware devices are categorized further as below according their data handling capability. 
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/19.png
+
+As most of the devices have computational power at the node itself IoT devices enable edge computing as well where a certain level of processing can happen. For example the temperature can be monitored at a location and an alarm can be generated to a cloud application only when a specific limit is exceeded.
+The devices of an IoT network can be either a sensor or can actuator or edge computing devices together with the sensors.
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/20.png
+ 
+Single Board  Computers
+=======================
+
+Single board computers are small and low end computers with low end processing power. These computers comes in small physical size and comparatively inexpensive. Sometimes these are referred to as micro computers or computer on a stick. These computers have the microprocessor, input/outputs, memory and other basic characteristics of a normal computer. Micro computers also used as popular IoT devices since they have the capabilities of IoT devices. One of the popular single board computers is Rasberry Pi.
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/21.jpg 
+
+Why Edge computing devices is the future?
+=======================
+
+The data transmitted by sensors or devices directly to the cloud are highly dependent on the connectivity which is sometimes not reliable. The resources consumed even for a simple analysis in direct cloud accessed architecture is high which takes more time as well. This is whether the edge computing devices provides a major advantage. The edge computing devices are capable of processing and storing certain amounts of data and transmit to the cloud which saves power and valuable cloud resources together with time.
+Depending on the requirements with the increase of high performing computer hardware devices the edge computing will provide more promising future. 
+ 
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/222.jpg 
+
+===================================
+ Micro-controller based edge devices
+===================================
+
+In these systems, complex data analysis and decision making tasks are handled in the cloud back-end, while the device nodes perform data collection tasks or respond to remote control commands.
+Overall, this is a nice balance. Hardware is inexpensive to replace and can run on small batteries for multiple years, and heavy compute resources are provided by cloud services that are easy to scale up to meet demand as the number of edge devices increases.
+
+Let’s learn more about microcontrollers…
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/26.png
+
+**********************************
+Microprocessor vs Micro-controller
+**********************************
+
+Computer is comprised of a microprocessor. Basically microcontroller is a mini computer intended for limited task where a computer with microprocessor is intended to do many multiple tasks. There are some similarities and differences between Microprocessor and Microcontroller.
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/23.png
+
+Microcontroller has all the features of a microprocessor with comparatively low performance. The microcontroller is a minicomputer with all the features of a computer.
+
+*************
+Block Diagram
+*************
+
+ 
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/24.jpg
+
+**********************
+System on a Chip (SoC)
+**********************
+
+
+System on a Chip or SoC will be the future of processors. With the advancement of the integrated circuit manufacturing, miniature computers on a single chip of silicon is arising. These will have more features, performance and smaller size with separate connectivity modules. SoCs are in contrast to the common traditional motherboard-based PC architecture, which separates components based on function and connects them through a central interfacing circuit board. A SoC integrates a microcontroller or microprocessor with advanced peripherals like graphics processing unit (GPU), Wi-Fi module, or one or more coprocessors. Similar to how a microcontroller integrates a microprocessor with peripheral circuits and memory, an SoC can be seen as integrating a microcontroller with even more advanced peripherals.
+SoC is increasingly becoming popular in mobile computing, embedded systems and IoT. 
+
+****************************
+Microcontroller Architecture
+****************************
+
+Microcontrollers incorporate memory, a CPU, peripherals and I/O interfaces into a single chip. The architecture of a device can be depicted as in below diagram.
+ 
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/24.png
+
+*****************************
+Hardware ,Software & Firmware
+*****************************
+
+- Hardware - Hardware in ICT domain is referred to as the physical parts of a computer.
+
+- Software - Software is a set of instructions or programs instructing a computer to do specific tasks.
+
+- Firmware - Firmware is a specific class of computer software that provides the low-level control for a device's specific hardware.
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/26.jpg
+ 
+********************************
+Applications of Microcontrollers
+********************************
+
+The nature of microcontrollers has come inherent advantages to use in practical applications.
+
+- Suitable for specific applications
+- Programmable according to requirement
+- Application development is less time consuming
+- Can be prototyped using simulators and emulators
+- Easy to design and implantation
+
+This is why microcontroller are widely used in industries for many commercial products. At present most consumer products have certain parts designed with a microcontroller. Below are some of the popular implementations.
+
+- Wearable devices
+- Robotics
+- Automobile
+- Industrial automation
+- IoT applications
+
+The use in IoT applications are increasingly becoming popular based on the advantages of microcontroller.
+
+***************************
+Microcontroller Programming
+***************************
+
+A microcontroller does not have an instruction set to perform the operation out of the box. Therefore it needs to be programmed with instructions to perform a task. Therefore 3 tasks need to be done to program the microcontroller.
+
+- Write the code in a programming language
+- Compile the code to suit the microcontroller used
+- Upload the compiled version of program to computer
+
+C is the most popular language to program microcontrollers. However C++ and Python are also used commonly by users. 
+
+==========================
+Communication Technologies 
+==========================
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/27.PNG
+
+Protocols and Communication Technologies are used in the Internet of Things. Some of the key IoT technologies and protocols (IoT Communication Protocols) are Bluetooth, Wifi, Radio Protocols, LTE-A and WiFi-Direct. These IoT communication protocols meet and complement the specific functional requirements of an IoT system.
+
+*********
+Bluetooth
+*********
+
+Bluetooth is an important short-range IoT communication technology. Bluetooth has become very important in computing and many consumer product markets. It is expected to be a key for wearable products in particular, again connecting to the IoT albeit probably via a smartphone in many cases. The new Bluetooth Low-Energy (BLE) – or Bluetooth Smart, as it is now branded – is a significant protocol for IoT applications. Importantly, while it offers a similar range to Bluetooth it has been designed to offer significantly reduced power consumption.
+
+******
+Zigbee
+******
+
+ZigBee is similar to Bluetooth and is majorly used in industrial settings. It has some significant advantages in complex systems offering low-power operation, high security, robustness and high and is well positioned to take advantage of wireless control and sensor networks in IoT applications. The latest version of ZigBee is the recently launched 3.0, which is essentially the unification of the various ZigBee wireless standards into a single standard.
+
+*****
+ Wi-Fi
+*****
+
+WiFi connectivity is one of the most popular IoT communication protocol, often an obvious choice for many developers, especially given the availability of WiFi within the home environment within LANs. There is a wide existing infrastructure as well as offering fast data transfer and the ability to handle high quantities of data. Currently, the most common WiFi standard used in homes and many businesses is 802.11n, which offers range of hundreds of megabit per second, which is fine for file transfers but may be too power-consuming for many IoT applications.
+
+********
+Cellular
+********
+
+Any IoT application that requires operation over longer distances can take advantage of GSM/3G/4G cellular communication capabilities. While cellular is clearly capable of sending high quantities of data, especially for 4G, the cost and also power consumption will be too high for many applications. But it can be ideal for sensor-based low-bandwidth-data projects that will send very low amounts of data over the Internet.
+
+*******
+LoRaWAN
+*******
+
+LoRaWAN is one of popular IoT Technology, targets wide-area network (WAN) applications. The LoRaWAN design to provide low-power WANs with features specifically needed to support low-cost mobile secure communication in IoT, smart city, and industrial applications. Specifically meets requirements for low-power consumption and supports large networks with millions and millions of devices, data rates range from 0.3 kbps to 50 kbps.
+
+
+
+=============
+IoT Protocols
 =============
 
 
-- Open Ardunio IDE if not opened already.
-- Select Magicbit from **Tools->Boards**
-- Select port **Tools->Ports**
-- Open Blink Example **File->Examples->Basic->Blink**
-- Upload the code to the Magicbit using upload button on Arduino IDE 
-- If Green Led on backside of the Magicbit is blinking your have just begun the magic with Magicbit
+A protocol is a standard set of rules that allow electronic devices to communicate with each other. These rules include what type of data may be transmitted, what commands are used to send and receive data, and how data transfers are confirmed. You can think of a protocol as a spoken language.
 
+*************************************************
+Message Queue Telemetry Transport Protocol (MQTT)
+*************************************************
 
-.. warning:: To use analogWrite, Tone and Servo funtions,Include ESP32Servo **Sketch->Include Library->ESP32Servo** or put **#include <ESP32Servo.h>** on top of arduino sketch.
-
-
-
-
-
-***************
-Examples
-***************
-Example 1: Blinking an LED
-==========================
-
-Introduction
-------------
-
-     In this example you are learning how to turn on and off a LED or any other actuator which can be controlled by a digital output such as relay, bulb, motor.
-
-Learning Outcomes
-------------------
-
- From this example, you'll get an understanding about,
-
--  Pin Mode
--  Digital Write
--  Delay Functions
-
-Components
-----------
-
-- Magicbit
-
-Theory
-------
-
- A digital output allows you to control a voltage with an electronic device. If the device instructs the output to be high, the output will produce a voltage (generally about 5 or 3.3 volts). If the device instructs the output to be low, it is connected to ground and produces no voltage.Here Magicbit is the device and output voltage is either 3.3V for HIGH and 0V for LOW.
-
-Methodology
------------
-
- Magicbit equipped with four onboard leds in Magicbit development board, Lets select yellow LED (which is wired to D18)
-
- .. image:: https://github.com/Ruwatech/docu-Magicbit/blob/master/Resources/image4.png?raw=true
-
- By setting output state to high of LED pin will turn on the led and by setting output state to LOW will turn of LED.
-
-Coding
-------
-
- .. code-block:: c
-
-     void setup(){
-	pinMode(18,OUTPUT);
-     }
-     void loop(){
-	digitalWrite(18,HIGH);
-	delay(1000);
-	digitalWrite(18,LOW);
-	delay(1000);
-     }
-
-Explanation
------------
-
- **pinMode(pin, Mode):** Configures the specified pin to behave either as an input or an output. Here we use pin as an output
-
- **digitalWrite(pin No, State):** Write a HIGH or a LOW value to a digital pin.Pin mode must be setup for the same pin in Setup to work this function properly.
-
- **delay(ms):** Pauses the program for the amount of time (in milliseconds) specified as parameter.(note 1000 milliseconds equals to one second)
-
-**Note: Write code for a knight rider pattern using on board leds of Magicbit**
-
-
-Example 2: Reading the state of a push button
-=============================================
-
-Introduction
-------------
-     In this example you are learning how read a digital input from something like a button & use it to turn on and off a LED or any other digital device.
-
-Learning Outcomes
---------------------
- From this example, you'll get an understanding about,
-
--  Digital Read
--  IF-ELSE conditions
--  Variables
-
-Components
--------------
-- Magicbit
-
-Theory
-------------
- A digital input allows you to read digital signals. Microcontroller recognizes the signal as 1(HIGH) when the signal is close to 3.3v (or 5v depending on the microcontroller) and recognizes as 0(LOW) when the signal is close to 0v. This reading can be used in the program to do various things.  
-
-Methodology
------------
- Magicbit equipped with two onboard push buttons in Magicbit development board, Lets select the push button which is wired to D34. Buttons on the board are in pulled up internally (to learn more about pullups/pulldowns follow this link), which means when button is not pressed the status of the button is 1(HIGH), & when the button is pressed the status of the button is 0(LOW).
-
- .. image:: https://github.com/Ruwatech/docu-Magicbit/blob/master/Resources/image7.png?raw=true
-
- Also like in previous example we need to select an LED to indicate the change, lets select RED LED which is wired to pin D27.
-
- First we set the input output configurations of the Button and the LED using pinMode, in this case button is an INPUT, LED is an OUTPUT.
- Then in the loop section we check the state of the button & store it in an int type variable called buttonState (follow this link to learn more about data types in arduino).
-
- Then we can use the variable as the condition of the if block, and if the button is pressed, the bulb should turn on, and the button is not pressed the light should turn off. 
-
-Coding
-----------
- .. code-block:: c
-
-     void Setup(){
-	pinMode(27,OUTPUT);
-	pinMode(34,INPUT);
-     }
-     void loop(){
-
-      int buttonState = digitalRead(34);
-      if(buttonState == LOW){
-	digitalWrite(27, HIGH);
-      }else{
-	digitalWrite(27, LOW);
-      }
-     }
-
-Explanation
---------------
- **digitalRead(pin No):** Reads the condition of the given pin and returns a digital value HIGH or LOW.
-
- **IF/ELSE:** Used to evaluate a digital condition, we can put a digital logic condition in then parenthesis. If the condition is true, it executes the code block in the immediate curly bracket section, if the condition is false it executes the code block in the else curly bracket. 
-
-  if(condition){
-	//Do if condition is true
-  }else{
-	//Do if condition is false}
-
-
-**Note: Write a code to toggle an LED in the button press. LED turns on when button pressed & released, LED turns off when button is pressed & released again. (Hint: Make use of variables to ‘remember’ the state of the button press).**
-
-Example 3: Reading an Analog Signal
-===================================
-
-Introduction
--------------
-
-     In this example you are learning to read an analog sensor & print it on the serial console.
-
-Learning Outcomes
-------------------
-
- From this example, you'll get an understanding about,
-
--  Analog Read function
-
-
-Components
------------
-
-- Magicbit
-
-Theory
--------
-
- In real world most of the signals we encounter are analog signals (temperature, air pressure, velocity), they are continuous. But computers work on digital domain, to interact between the worlds, representing an analog signal in the digital domain is important. 
- (to read more about analog to digital conversation, follow this link)
-
-Methodology
-------------
-
- For this example we use the potentiometer on the Magicbit board, which is connected to pin, D39. It generates a voltage between 0 and 3.3V according to the angle of the potentiometer. 
-
- .. image:: https://github.com/Ruwatech/docu-Magicbit/blob/master/Resources/image1.png?raw=true
-
- We read the analog signal and storing it in an int type variable(0v= 0 analog value, 3.3v = 1024 analog value), sensorValue, later, we use this value to print on the serial window of arduino IDE as well as light up the  red LED(D27) if the analog value exceeds than 512.
-
-Coding
-------
- .. code-block:: c
-
-   void setup(){
-	pinMode(39,INPUT);
-	pinMode(27,OUTPUT)
-	Serial.begin(9600);
-   }
-   void loop(){
-	int sensorValue = analogRead(39);
-	Serial.println(sensorValue);
-	
-        if(sensorValue > 512){
-	   digitalWrite(27,HIGH);
-        }else{
-	   digitalWrite(27,LOW);
-        }
-    }
-
-Explanation
------------
- **analogRead(pin No):** this reads and assigns the corresponding analog value to the left.
-
-Activity
----------
-
-**Note: Do the same example using the LDR on the board (D36)**
-
-Example 4: Working with Analog Write
-====================================
-
-Introduction
----------------
-     In this example you are learning how to turn on and off a LED or any other actuator which can be controlled by a digital output such as relay, bulb, motor.
-
-Learning Outcomes
--------------------
- From this example, you'll get an understanding about,
-
--  Pulse Width Modulation
--  Analog Write
-
-Components
-------------
-
-- Magicbit
-
-Theory
------------
-
- To change the brightness of a LED we could change the voltage the LED is supplied with, but in a microcontroller, ability to change the voltage (converting a digital number to an analog voltage) is limited, so a method called PWM (Pulse Width Modulation) is used. What this does is pulsing on and off the pin in a high frequency. The length of the pulses creates the perception of brightness. 
-
- Duty cycle is a term used to describe the ratio between on and off times.
-
- .. image:: https://github.com/Ruwatech/docu-Magicbit/blob/master/Resources/image8.png?raw=true
-
- In this example higher Duty cycle gives higher brightness & lower duty cycle gives lower brightness.
-
-Methodology
--------------
- Lets select green LED (which is wired to D16). We will use a for loop to generate the duty cycle (0 - 0% duty, 255-100% duty). And also to generate 255 cycles.
-
-Coding
-------
- .. code-block:: c
-
-  #include <ESP32Servo.h>
-
-  void setup(){
-        pinMode(16,OUTPUT);
-  }
-  void loop(){
-	for(int i = 0; i < 256; i++){
-	analogWrite(16, i);
-	delay(10);
-  }
-
-Explanation
-------------
- **for(int i=0; i<256; i++):** There are 3 parameters in a for loop, first parameter we are defining a variable to store the value generated by the for loop. Second parameter specifies the condition that needs to be true to run the for loop(else it breaks out from the loop), third parameter specifies the change happens to the variable in each cycle, in this case 1, added to i. 
-
- **analogWrite(pin number, pwm value):** You can input the pin number you need to do pwm and then the pwm value you need to give to that pin. This assigns the corresponding duty cycle to the pin.
-
-
-**Note This example we have coded to increase the brightness, write a code to do the opposite of that, to fade the brightness of the led, & put both effects together to create a beautiful fade & light up effect.**
-
-
-Example 5: Using Serial Protocol
-=================================
-
-Introduction
-------------
-     In this example you are learning to use serial communication function.
-
-Learning Outcomes
------------------
-
- From this example, you'll get an understanding about,
-
--  Serial Protocol usage between Magicbit & the PC
-
-
-Components
-----------
-
-- Magicbit
-- Computer with arduino installed
-
-Theory
--------
- In microcontroller programming, communication between devices is essential. There are hundreds of protocols available, but most common & easy to use is Serial Protocol. Commonly used to communicate information between a microcontroller and a computer.
-
- .. image:: https://github.com/Ruwatech/docu-Magicbit/blob/master/Resources/image3.png?raw=true
-
-Methodology
------------
-   
- We configure a button as the 2nd example (D34 is used). Then we initialize serial communication between the computer and Magicbit. 
- After that in the loop section if condition check if the button is pressed. If pressed, it prints “Button Pressed” on the serial console.  
-
- You could use the serial monitor window of arduino IDE to view the serial output
-
- .. image:: https://github.com/Ruwatech/docu-Magicbit/blob/master/Resources/image5.png?raw=true
+MQTT (Message Queue Telemetry Transport) is a messaging protocol developed with the aid of Andy Stanford-Clark of IBM and Arlen Nipper of Arcom in 1999 and is designed for M2M communication. It’s normally used for faraway tracking in IoT. Its primary challenge is to gather statistics from many gadgets and delivery of its infrastructure. MQTT connects gadgets and networks with packages and middleware. All the devices hook up with facts concentrator servers like IBM’s new message sight appliance. MQTT protocols paintings on top of TCP to offer easy and dependable streams of information.
  
- Then the serial console appears (you have to select the serial port number correctly, follow this link to learn how to). 
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/28.jpg
 
- .. image:: https://github.com/Ruwatech/docu-Magicbit/blob/master/Resources/image6.png?raw=true
+These IoT protocols include 3 foremost additives: subscriber, publisher, and dealer. The writer generates the information and transmits the facts to subscribers through the dealer. The dealer guarantees safety by means of move-checking the authorization of publishers and subscribers. 
 
- **1:** You can type in stuff here & hit enter to send data to Magicbit
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/29.png
  
- **2:** This area shows the data coming from Magicbit
- 
- **3:** From this menu you have to select a common baudrate between the computer and the magic    bit.
+****
+HTTP
+****
 
-Coding
-------
- .. code-block:: c
+The good old HTTP is still commonly used even in IoT, especially on low cost micro controllers. It has many benefits like its text based (debug and message crafting is easy), many libraries and the most importantly it goes through firewalls. Its biggest disadvantage is that it’s not full duplex.  Server can’t talk to the devices (Polling is used to overcome this).
 
-     void setup(){
-       pinMode(34,INPUT);
-       Serial.begin(9600);
-     }
-     void loop(){
-       if(digitalRead(34) == LOW){
-         Serial.println(“Button is Pressed”);
-       }
-     }
+***************************************
+Constrained Application Protocol (CoAP)
+***************************************
 
+CoAP is an internet utility protocol for constrained gadgets. It is designed to enable simple, constrained devices to join IoT through constrained networks having low bandwidth availability. This protocol is primarily used for machine-to-machine (M2M) communication and is particularly designed for IoT systems that are based on HTTP protocols.
 
-Explanation
------------
- **Serial.begin(baudrate):** Initializes a serial connection, baudrate specifies the speed of data transfer (bits per second). Standard values are 1200, 2400, 4800, 9600, 14400, 19200, 38400, 57600, 115200, 128000 and 25600
 
- **Serial.print(stuff to print):** Using this function, serial data can be sent, stuff to print can be any type of arduino variable, or even a static string.
 
- **Serial.println(stuff to print):** Using this function, serial data can be sent, stuff to print can be any type of arduino variable, or even a static string, this is different than Serial.print() is this always prints the content in a new line, rather than printing all in one line.
+=================================================
+Internet of Things Solution design considerations
+=================================================
 
-Activity
----------
-**Note: do the same example using Serial.print(), observe the difference.  Create a button press counter, which displays the button press count on the serial console of arduino IDE.**
+Building complete and functional IoT projects can be a puzzle full of surprises if you are not aware of all the building pieces that must be taken into account. The IoT market offers a wide range of technologies, products and applications. All these options are confusing when you face the design and development of a specific IoT project with specific needs. Fortunately, all IoT projects share the same building blocks from an architectural point of view. If you have a clear understanding of these building blocks, it will be easier for you to design a successful IoT system.
 
-
-
-Example 6: Using the onboard OLED Screen
-=========================================
-
-Introduction
-------------
-     Color OLED screen on Magicbit can display text as well as simple logos & images.
-
-Learning Outcomes
-------------------
-
- From this example, you'll get an understanding about,
-
--  Using Adafruit OLED library
-
-Components
------------
-
-- Magicbit
-
-Theory
----------
- Magicbit has a 0.96" OLED Screen which can be communicated with from I2C protocol. The display has the address, **0x3c**.
-
-Methodology
--------------
- Adafruit OLED library(Adafruit_SSD1306 & Adafruit_GFX) is used to handle the LCD, its important to install those libraries beforehand. First we create the content we need to print onto the screen and then use display.display command to update the screen.
-
-Coding
----------
- .. code-block:: c
-
-  #include <Wire.h>
-  #include <Adafruit_GFX.h>
-  #include <Adafruit_SSD1306.h>
-  #define OLED_RESET 4
-
-  Adafruit_SSD1306 display(128,64);
-
-  void setup(){
-    display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
-    display.display();
-    delay(3000);
-  }
-
-
-  void loop(){
-    display.clearDisplay();
-    display.setTextSize(2);
-    display.setTextColor(WHITE);
-    display.setCursor(10, 0);
-    display.println("Hello");
-  
-    display.setTextColor(WHITE);
-    display.setTextSize(1);
-    display.setCursor(0, 25);
-    display.println("Welcome to");
-    display.println();
-    display.println("Magic");
-    display.println("Bit");
-    display.display();
-    display.clearDisplay();
-  
-    delay(1000);
-
-    }
-
-Explanation
------------
-
- **display.clearDisplay():** Clears the OLED display.
-
- **display.setTextSize(2):** Set the font size of the text.
-
- **display.setCursor(0, 25):** Sets the cursor(determines where the next text will appear).
-
- **display.println(stuff to print):** print the data given on a new line, similar effect like Serial.println.
-
- **display.setTextColor(WHITE):** Sets the color of the text.
-
- **display.display():** Updates the changes to the screen.
-
-
-**Note:: Make a program to display the ADC value of the potentiometer on the OLED display.** 
-
-
-
-	
-Example 7:  DC motor controlling
-====================================
-
-7.1 Introduction
-------------------
-There are many projects where we have to use motors for many purposes. All processors work under 5V or 3.3V. So their outputs are not enough to supply larger current and voltages to control motors. In this case we use an additional module to control motors. That is a motor driver. As the name suggests, every motor driver is doing the same thing. That is , controlling motors using external power sources based on microcontroller signals. These controlling signals are not constant voltage values. They are PWM(Pulse width modulation) signals. These signals are digital signals. Lot of motor drivers use the H-Bridge mechanism to control the motors. If you use an Arduino board you have to use an external motor driver to control motors. But in the Magicbit you don't want to buy any external motor controllers. Because it already has an inbuilt H-bridge motor driver. So you can directly connect motors to the Magicbit and you can play with them.
-
-**Learning outcomes:**
-
-•	Using inbuilt motor driver to control motors
-•	Apply motor controlling process for projects
-
-7.2 Components
-----------------
-
-•	Magicbit
-•	brushed DC motors(3V or 6V)
-
-7.3 Theory
------------
-
-First let's look at how this whole process is happening. We all know about that every motor needs power source to work. So if you bought 3v motor you have to supply 3V for proper working. The passing current through the motor is depend on torque of the motor. If motor axel is working freely then it gets low amount of current. If motors are in difficult condition to rotate there axel then it gets higher amount of current. To control motors we used voltage sources. Voltage sources are sources which supply any amount of current under constant voltage. So the speed of motors will depend on the voltages. If we supply high voltage then motor will work at higher RPM and vice versa. Therefore now you can understand that we can control the speed by controlling the supply voltage level. But this is an old way and it's not efficient and accurate. Modernly we use PWM pulses. PWM means pulse width modulation. In this case we generate a square wave with some constant frequency to control the motors. So the lower state of this wave is nearly zero volt (0V) and the higher state of the wave is nearly supply voltage. Therefore we are able to use our full supply voltage to control the motors. But how can we control the motor speeds using this theorem. That is very easy. If we consider one cycle (duty cycle) of the wave that includes two parts. One is the High stage part and the other one is Low stage part. Let's say High stage time duration is T1, Low stage Time duration is T2 and one cycle time duration is T. So we can simply write the equation below.
-
-                                                                              T=T1+T2
-									      
-If T2=0 and T=T1,then there isn't any lower state part in every cycle. In this case motor is working with full speed. Because we always give source voltage to motor. But if T1=0 and T=T2, there is no supply voltage and current to the motor. In this case motor is fully turned off. So the speed will be zero. Let's look at another situation. Lets say T1=T2 ,then T1=T2=T/2. So at this time both time periods of high and low states are equal to every cycle. Now the average value of the wave is half of the source power. Therefore the supply voltage to the motor is half of the main supply voltage(we don't know the variation between the supply voltage and the motor speed. because it depends on your motor.therefore we can't say the motor speed will be half of the maximum speed under half of supply voltage). In this way we can get every voltage between 0 and source voltage from average voltage by changing the ratio between T1 and T2.
-To measure the PWM signal average, we use some factor value called duty cycle value. This value is a percentage value of the ratio of T1 and T.
-
-                                                                   Duty cycle=(T1/T)x100%
-								   
-.. image:: https://circuitdigest.com/sites/default/files/projectimage_tut/Pulse-Width-Modulation.jpg
-
-In the microcontrollers we represent this duty cycle value from bit value. If we use 8 bits then we can get 0-255 range to represent duty cycle. In that case 255 means 100% duty cycle and 0 means 0% duty cycle and so on. Now you have some general idea about motor control signals. These PWM signals are not limit to motor controlling applications. These signals are used for many purposes. Next look at how can we use this theorem to motor controlling process. To control motors we use a microcontroller to generate PWM signals. As the introduction describes, these voltage ranges and current of the PWM signals are not sufficient to control the motors. So we used motor driver for that purpose. All we know is that motors can rotate in two opposite directions with various speeds. Because of that reason we get two outputs from the microcontroller to control motor. If we want to rotate the motor in one direction then we use one output to generate a PWM signal while the other one is in low state. If we want that motor rotates in the opposite direction, in that case we use a second output pin to generate a PWM signal while setting the low state to the first pin. Because of the lack of current and voltage of this pin outputs, we will use motor controller unit. This unit includes an H-bridge switching mechanism. Let's look at how it works.
-Before moving to that part, take a look at what transistor is. Transistor is a semiconductor device which is used to control signals. There are a lot of transistor types. But every transistor works in the same principle. A transistor has three pins. One pin is used to supply the signal. These signals can be voltage or current signals. The source current is going through other pins. According to the input signal this flowing current is changing. If input signal is larger than some defined value then the passing current will be maximized and if input signal is lower than some amount, then the passing current will be nearly neglectable. So these 2 situations are known as cutoff and saturation regions of the transistor. At these stages the transistor works as a switch. So if we connect microcontroller output into the transistor input signal, then at the high digital signal transistor will be on and at the low digital signal transistor will be off. Now you have a basic idea about transistor mechanisms.
-
-So now let's look at the H-bridge mechanism.
-
-.. image:: https://www.build-electronic-circuits.com/wp-content/uploads/2018/11/H-bridge-switches.png
-
-As you can see there are four switches s1, s2, s3 and s4. These switches are actually transistors or some switching component. Let's analyse this diagram. If s1 and s4 are ON and others are OFF then, the motor will work in one direction. By changing the ON and OFF time of the S1 and S4 with some constant frequencies, we can rotate that motor with various speeds. If s3 and s2 are ON and others are OFF then the motor will go in the other direction. Also we can change the motor speed by changing the ON and OFF time of S2 and S3 switches.
-If all switches are OFF or all are ON then the motor will stop.
-
-.. image:: https://www.build-electronic-circuits.com/wp-content/uploads/2018/11/H-bridge.png
-
-So now you can see how switches are replaced by transistors. Q1, Q2, Q3 and Q4 represents S1, S2, S3 and S4 switches. In this diagram the base pin is the input signal pin of the transistor. If we supply a high state signal to that pin the transistor will saturate and that transistor acts as a closed switch (ON). Otherwise it will act as an open (OFF) switch. In this diagram there are four inputs to control for transistors. But we combine these four inputs to two inputs which satisfy the above switching conditions.
-
-In the Magicbit it includes L110 motor driver IC which has the ability to control two motors. So it is a two channel motor driver IC. It internally connected to the esp32 processor of the Magicbit from four. M1A, M1B, M2A and M2B are the pins of the lower port of the Magicbit which are output pins of the L9110 IC.
-
-7.4 Methodology
------------------
-
-Connect the motor to the M1A and M1B or M2A and M2B pins or connect two motors to the port on the left corner in the lower side of the Magicbit. Connect the Magicbit to your PC and upload the following code.
-
-
-7.5 Coding
-------------
-.. code-block:: c
-
-	#include <ESP32Servo.h>
-	int M1A = 26; //motor drive input pins
-	int M1B = 2;
-	int M2A = 27;
-	int M2B = 4;
-	void setup() {
-	  pinMode(M1A, OUTPUT); //configure as inputs
-	  pinMode(M1B, OUTPUT);
-	  pinMode(M2A, OUTPUT);
-	  pinMode(M2B, OUTPUT);
-	}
-	void loop() {
-	  for (int i = 0; i <= 255; i++) { //rotate both motors to direction
-	    analogWrite(M1A, i);//pwm signal 
-	    analogWrite(M1B, 0);
-	    analogWrite(M2A, i);
-	    analogWrite(M2B, 0);
-	    delay(100);
-	  }
-	  analogWrite(M1A, 255);//stop for 1 second
-	  analogWrite(M1B, 255);
-	  analogWrite(M2A, 255);
-	  analogWrite(M2B, 255);
-	  delay(1000);
-	  for (int i = 0; i <= 255; i++) { //rotate both motors to opposite direction
-	    analogWrite(M1A, 0);
-	    analogWrite(M1B, i);
-	    analogWrite(M2A, 0);
-	    analogWrite(M2B, i);
-	    delay(100);
-	  }
-	  analogWrite(M1A, 255);//stop for 1 second
-	  analogWrite(M1B, 255);
-	  analogWrite(M2A, 255);
-	  analogWrite(M2B, 255);
-	  delay(1000);
-	}
-	.. image:: https://github.com/magicbitlk/Magicbit-Magicblocks.io/blob/master/Images/magic.jpg?raw=true?raw=true
-	
-	
-*****************************************************
-Internet of Things
-*****************************************************
-
-The `Internet of things <https://www.iotforall.com/what-is-iot-simple-explanation/>`_ is nothing new. It is an evolutionary next step in the machine to machine communication paradigm. With an ever increasing number of 'things' at our disposal the need for connected 'things' has grown rapidly. However with increasing options comes added complexity which introduces steep learning curves and more importantly more confusion. What devices should I use? What cloud platform will best server my interest? I am new to IoT where should I start? Those are the question that would linger in any one who would dare to wonder in to the internet of Things. We, at `magicblocks.io <http://magicblocks.io>`_ have put some magic to work to make the life of both the newcomer and the professional one step easier.
-
-***************************
-Magicblocks.io Introduction
-***************************
-
-Magicblocks.io is the IoT platform by `A&T Labs <http://atlabslanka.com>`_ for building IoT applications with minimal hassle. Tried and tested over the years the lateset release of `magicblocks.io  <http://magicblocks.io>`_
-will connect to more devices and do more thanks to the open source project Node-Red.
-magicblocks.io is a launchpad for learning and prototyping your internet of things. It consists of
- 
-- Hardware suite made up of
-    - Development boards
-    - Prototyping kits for sensors & actuators
-- Cloud platform made up of
-   -  Drag and drop editor to easily cook up your solutions
-   -  Dashboards to visualize your data
-   - Data storage
-   - API services
-Everything has been designed to make the learning curve as shallow as possible for the newcomer and as flexible as possible for the advanced user. 
-
-
-
-
-
-Magicblocks.io Playground
-=============================
-
-Any ioT creation you want to connect with nodes without any coding and your project running in the cloud platform the development board you use will not have much memory or more processing capability, unless you want to create Image Processing, Character Recognizing, DB Handling, you can create any project on it.
-
-You can also create attractively online dashboards online without any coding
-
-.. image:: https://github.com/Magicblocks/magicblocks.io/blob/master/Images/pasted-image-0-768x432.png?raw=true
-
-
-
-
-
-Magicblocks.io Dashboard
-========================
-
-In Magicblocks you can also create Web based-dashboards attractively for your IoT designs without any codes. 
-You need to connect the necessary widgets to the dashboard that you want and to configure the settings you need to reach them. 
-Then, you can access your Online Dashboard from the dashboard menu on your dashboard, where you can click on the URL in the browser to access the Dashboard via any Device Device such as Smart Phone, Tablet, PC.
-Any ioT creation you want to connect with nodes without any coding and your project running in the cloud platform the development board you use will not have much memory or more processing capability, unless you want to create Image Processing, Character Recognizing, DB Handling, you can create any project on it.
-
-You can also create attractively online dashboards online without any coding
-
-.. image:: https://github.com/magicbitlk/Magicbit-Magicblocks.io/blob/master/Images/dashboarde.png?raw=true
-
-
-***************
-Getting Started
-***************
-
-
-Create Magicblocks.io Account
-===========================================
-
-- Go to magicblocks website `http://magicblocks.io/ <http://magicblocks.io/>`_
-
-
-- Select SIGNUP
-.. image:: https://github.com/magicbitlk/Magicbit-Magicblocks.io/blob/master/Images/pasted-image-0-1-1024x576.png?raw=true
-
-- Click on the SIGN UP button after inserted your details
-
-.. image:: https://github.com/magicbitlk/Magicbit-Magicblocks.io/blob/master/Images/pasted-image-0-2-1024x576.png?raw=true
-- Go to the email account you provided and activate your Magicblocks account with the Activation Link
-
-- Follow the Activation Link which we have sent you as an email.
-
-.. image:: https://github.com/magicbitlk/Magicbit-Magicblocks.io/blob/master/Images/SS1.png?raw=true
-
-
-Login to Your Magicblocks.io Account
-=====================================
-
-- Go to Magicblocks.io official website. www.magicblocks.io
-- Select LOGIN
-- Provide your login details.
-- Enter your email address and the Magicblocks Password and sign in to magicblocks
-.. image:: https://github.com/magicbitlk/Magicbit-Magicblocks.io/blob/master/Images/SS2.png?raw=true
-
-Start the Playground
-=====================================
-
-When you login for the first time your playground will not be running. Playground is the visual programming environment based on Node-Red that has been customized for seamless integration with hardware devices to enable IoT. If you do not have a valid subscription, you will be allowed to run the playground only for 1 hour continuously before it is automatically stopped. You will need to restart the playground manually after this 1 hour period.  You can subcribe to 3 months free subscription by enterting coupon code in Subscription tab provided with your magicbit device. If you have any issue please write to `info@magicbit.cc <info@magicbit.cc>`_
-
-.. image:: Images/playgroundview.png
-.. image:: Images/playgroundview-demomode.png
-
-Create a new device
-=====================================
-
-Go to Device Manager and add a new device.. Set device type as **Magicbit** & set status to **Active** . You can use any name and description. 
-
-.. image:: Images/createdevice.PNG
-
-Keep this browser tab open since you will need to copy the device Id and the key to setup the device in the next step.
-
-Setting up a device
-====================
-Connect Magicbit to computer using provided USB cable.
-
-.. image:: Images/Connect.gif
-
-Download `Magicbit utility tool <http://magicbit.cc/MagicbitUtility.msi>`_ and install drivers
-
-Select COM port from drop down list and select magicblocks to install firmware.
-.. image:: Images/Utility.PNG
-  
-- Wait until uploading is completed and search for its configuration WiFi access point to come up. It would be named "Magicbit" in the default configuration
-
-.. image:: Images/WiFiSetup.png
-
-- Connect to this WiFi access point and go to http://192.168.4.1
-
-.. image:: Images/portal-setup.png
-
-- Fill in the device Id and the key that was generated in the previous step. You can change the **Name** to any name you like up to 32 characters. Select the WiFi SSID from the drop down and enter the WiFi password. If your WiFi is not listed here make sure the WiFi AP is active and reset the Magicbit board and retry.
-- Save the configuration. The default admin password is 12345. You can change this from the **Admin** tab
-
-.. image:: Images/portal-admin.png
-
-- Once saved, the Magicbit will restart and try to connect to the WiFi and then to magicblocks. You can connect to the Magicbit's configuration WiFi AP and navigate to http://192.168.4.1 to check the status of the connection. 
-- Login to magicblocks, navigate to **Device Manager** and check if the **Connection** column comes up as a blinking green indicator. If yes, you can proceed to the next step
-
-Go to the playground!
-=======================
-
-- Login to magicblocks and click on **Edit** to open the playground.
-
-.. image:: Images/playgroundview-active.png
-
-- The playground is a hosted instance of a customized version of the open source Node-Red application. On the left you will find the palette where all the blocks will reside. You can drag and drop the blocks from the palette to the canvas and start rolling very quickly. Once done click the **Deploy** button on the top right corner and all your changes will be saved. In the next section we will go through some examples covering all the relevant blocks
-
-.. image:: Images/playground.PNG
-
-**********
-Hello Magicbit
-**********
-
-Let's start magic with displaying a text on Magicbit display.
-
- Open the Device Manager in your magicblocks account
-- Turn on your Magicbit board that was setup in the previous section and wait for it to connect
-- Copy the device Id of this Magicbit board
-- Open the playground
-- Drag and drop the **Display** block under the category **Magicbit**
-- Double click on the block and paste the device Id
-- Drag and drop an **inject** blocks under the **input** category and connect them to the **Display** block
-- In one **inject** node set payload type as String and type Hello Magicbit in the text box. You can set a topic too.
-- Click deploy
-- Click button in Inject node to see the magic. You can set any text from any where in the world!!!
-
-
-
-
-
-.. warning::  If you are not familiar with Magicblocks or Nodered you can quickly learn essential features from here. `https://magicbit-magicblocksio.readthedocs.io/en/latest/#playground <https://magicbit-magicblocksio.readthedocs.io/en/latest/#playground>`_
-
-***************
-Magicbit Blocks
-***************
-
-.. image:: https://github.com/magicbitlk/Magicbit-Magicblocks.io/blob/master/Images/magicbitNodes.PNG?raw=true
-
-Following Blocks are available.
- 
--  Digital Out
--  Digital In
--  Analog Out/PWM
--  Analog In
--  Serial Tx
--  Serial Rx
--  Servo
--  Display
--  Buzzer
--  Motor
--  DHT11
--  NeoPixel
--  Ultrasonic
-
-This block set enables you to control individual pins of the device from the playground. The functionality of each block is described below:
-
-How Configure Blocks
-======================
-
-Every block has a property called Device ID where you need to specify to which device this block belongs to. This is important because you will be working with multiple devices in a typical IoT project. You can find device ID from magicblocks device manager.
-
-Digital Out
------------
-
-.. image:: Images/digitalOut.PNG
-
-
-This block is used to set a digital output pin to 1 or 0 based on the input. An input of 1 or true will make the configured pin go HIGH and vice versa
-
-- Configuration
-    - Pin: pin number of the Digital pin to write to. Available pins can be selected from dropdown list. 
-    - Name: Any name desired
-- Input
-    - value to be written to the pin. Accepts 1 (true) or 0 (false) eg: {"payload": 1} 
-
-Digital In
-----------
-.. image:: https://github.com/magicbitlk/Magicbit-Magicblocks.io/blob/master/Images/digitalIn.PNG?raw=true
-
-
-This block will read Input status of a pin. There are two methods to get input 
-1. Poll - Block need to triggered to get input status. Any input will serve as a trigger. (eg:inject block)
-2. Interrupt - If there is any change of pin state of Magicbit block will output the current state
-Input status can be passed to a another block or viewed on the debug window.
-
-
-- Configuration:
-    - Pin: pin number of the digital pin to read .Select from drop down list
-    - Name: Any name desired
-    - Method: Poll/Interrupt
-- Input
-    - Any input. Used as a trigger
-- Output
-    - Value of the pin as 1 or 0 in the following format and the pin number as the topic
-
-Analog Out
-----------
-
-
-.. image:: https://github.com/magicbitlk/Magicbit-Magicblocks.io/blob/master/Images/analogOut.PNG?raw=true
-
-This block used to set PWM to pins of Magicbit. Value should be in range of 0-255. Inject block or output of a another block can be used to set the value.
-
-- Configuration:
-    - Pin: pin number of the to set PWM. Select from drop down list
-    - Name: Any name desired
-
-- Input
-    - Inject block or any block. Input value should be in range of 0-255
-
-Analog In
----------
-
-.. image:: https://github.com/magicbitlk/Magicbit-Magicblocks.io/blob/master/Images/analogIn.PNG?raw=true
-
-This block will read analog value of the ADC pin of the module. Similar to the digital in block you need to set method to read the value. Any input sent to the block will serve as the trigger.
-
-1. Poll - Block need to triggered to get input status. Any input will serve as a trigger. (eg:inject block)
-2. Interrupt - If there is any change greater or less than threshold value of Magicbit block will output the analog value
-
-- Configuration:
-    - Pin: pin number of the analog pin to read (Required)
-    - Name: Any name desired
-    - Method: Poll/Interrupt
-    - Threshold: If interrupt method selected value return from output if there is any change greater or less than this value
-
-
-- Input
-    - Any input. Used as a trigger
-- Output
-    - Value of the pin from 0 to 4096 (12bit ADC)  {"payload": 965}
-
-Control LED form web dashboard
-=============================================
-Introduction
-------------------
-There are 2 main methods of achieving this goal.
-
-- By using Inject Block.
-- By using Dashboard Switch.
-
-From both of this methods we discuss about second method .
-
-Methodology
-------------------
-- Setting Up the Switch Block
-Drag & drop the Switch block from the dashboard nodes section to the Flow.
-
-.. image:: https://hackster.imgix.net/uploads/attachments/1186197/screenshot_(65)_agR2N5xHmh.png?auto=compress%2Cformat&w=740&h=555&fit=max
-
-Double-click on the Switch node and set up a basic dashboard ui (user- interface) from the drop-down menu and a name for your field. The Mode as number input from the drop-down menu for both On and Off. And set on payload as 1 and off payload as 0.
-
-.. image:: https://hackster.imgix.net/uploads/attachments/1186198/screenshot_(66)_pC5mHGJOdF.png?auto=compress%2Cformat&w=740&h=555&fit=max
-
-- Setting Up the Digital Out Block
-
-Drag & drop the Digital out block from the Magicbit nodes section on the left of the screen to the flow. Double-click on the digital out block and type or paste your unique Device id from the Device Manager Tab on your Magicblocks account. ( This will link the digital out block with your Magicbit )
-
-.. image:: https://hackster.imgix.net/uploads/attachments/1186199/screenshot_(67)_zMgUMg4CA9.png?auto=compress%2Cformat&w=740&h=555&fit=max
-
-- Finally Deploying the Blocks & Using the Dashboard UI to Access It
-
-Connect the Switch block with the Digital Out node. Click on Deploy button on the top right-hand corner of the screen. After deploying go to the dashboard ui by clicking the link to dashboard URL on the top right-hand corner of the screen.
-
-
-.. image:: https://hackster.imgix.net/uploads/attachments/1186205/screenshot_(71)_4nQryObhwR.png?auto=compress%2Cformat&w=740&h=555&fit=max
-
-Once in the dashboard you can toggle the switch you just setup on and off to control the LED you assigned to the digital out block.
-
-.. image:: https://hackster.imgix.net/uploads/attachments/1186208/screenshot_(73)_hD62lHh6uu.png?auto=compress%2Cformat&w=740&h=555&fit=max
-
-Copy the your Dashboard URL and this can be accessed via the internet to display text onto your Magicbit Display from anywhere in the World.
-**Note:: make a flow to control all four LED's of the magicbit at once using web dashboard** 
-
-Display input parameters on web dashboard
-=====================================
-Introduction
------------------
-In this example we doing that display some data on web dashboard which sent by Magicbit at real time. To achieve this goal we need to feed some signal to magicbit. For this purpose we potentiometer on magicbit to get reading and display on a gauge in dashboard
-
-Methodology
------------
-
-Drag & drop the Analog In block from the input nodes section on the left of the screen to the Flow.
-
-.. image:: https://hackster.imgix.net/uploads/attachments/1188506/screenshot_(109)_BjMHbAsWSi.png?auto=compress%2Cformat&w=740&h=555&fit=max
-
-Double-click on the Analog In block and type or paste your unique Device id from the Device Manager Tab on your Magicblocks account. [ This will link the analog in with the Magicbit ]
-
-.. image:: https://hackster.imgix.net/uploads/attachments/1188507/screenshot_(110)_f702IMOmeD.png?auto=compress%2Cformat&w=740&h=555&fit=max
-Choose POT(39) from the PIN drop-down menu
-
-.. image:: https://hackster.imgix.net/uploads/attachments/1188509/screenshot_(122)_DPurAVqQ10.png?auto=compress%2Cformat&w=740&h=555&fit=max
-
-Select the Method as Interrupt from the drop-down menu.
-
-
-Setup the Gauge Block
+*********************
+Sensors and Devices
 *********************
 
-Drag & drop the Gauge block from the dashboard nodes section to the Flow.
+Devices and sensors are the “thing” part of your IoT projects. These and other devices interact with the physical environment. It is not only important that they accurately read the phenomenon your application needs (air temperature, power consumption, water flow, traffic density, etc.), but also, they have to be integrated with the overall system architecture too. When selecting the devices, you must check that they support the necessary networking protocols and that your system platform can decode the message formats they send.
+Device configuration is another important feature. Some devices provide configuration programs while others require internal reprogramming to change their behaviour. Finally, you must evaluate the power source the use (batteries, solar panels, AC, etc.) since it has a strong impact in the system maintenance.
+ 
 
-.. image:: https://hackster.imgix.net/uploads/attachments/1188512/screenshot_(124)_SUI7L5dkgT.png?auto=compress%2Cformat&w=740&h=555&fit=max
+**************
+Communications
+**************
 
-Double-click on the guage node and set up a basic dashboard ui [user- interface] from the drop-down menu and a name for your field.
+Although the “i” in IoT stands for internet, you have different kinds of networks available for communications among devices and with the platform. Choosing the right networking technology depends on the characteristics and requirements of the project. It is common to use more than one technology in an IoT project. The main factors to take into account when choosing a networking technology for your IoT projects are:
 
-Change the Range from 0 to 4095.
+Devices spread:
+===============
 
-.. image:: https://hackster.imgix.net/uploads/attachments/1188515/screenshot_(125)_G4BmIFRqlb.png?auto=compress%2Cformat&w=740&h=555&fit=max
+If devices are located in the same area like a building, an industrial plant or even a neighbourhood, short-range technologies like Wi-Fi, ZigBee would be a good choice. Otherwise, If devices are widespread in a city or country, long-range technologies like NB-IOT/ LoRa or Sigfox can be the right choice. 
+ 
+ 
+ 
+Required data rates:
+====================
 
-Finally Deploying the Blocks
+Some networking protocols are not suitable depending on the amount of data that the devices send. For instance, NB-IOT and LoRa do not provide enough bandwidth when a sensor must send the temperature of a room or the state of a parking lot every minute.
+
+Network coverage: 
+=================
+
+You can deploy your own network for the LoRa project including the use of third-party LoRa networks (TTN) or use an available network provided by third parties (2G, NB-IoT, etc.).
+
+********
+Platform
+********
+
+The software platform of your IoT projects will be in charge of managing the devices (onboarding process, monitoring, etc.) and receiving and processing the messages. It also must provide APIs for reading the gathered data. Your IoT software platform must be flexible enough to support different communication protocols (MQTT, REST, XMPP, WebSockets, etc.). 
+
+Platforms are usually deployed in the cloud, but you should check if they can be deployed on-premises in case the project is big enough and investing in computing hardware is an option. In addition to basic functionalities, some platforms provide other interesting features like data mining, multitenancy and deriving data.
+
+
+
+
+************
+Applications
+************
+
+All IoT projects are carried out for a purpose. Maybe the goal is receiving an alarm when a laboratory room reaches a certain temperature or optimizing the water supply of a city. In other cases, IoT projects are used for reducing the power consumption of a building or predicting the maintenance of an industrial engine. IoT applications are just software systems which use the data that is received by the devices and the functionality that they provide. Depending on the level of customization, three categories can be defined:
+
+- IoT vertical applications, which provide out-of-the-box functionalities for a specific application domain like smart waste management, smart building monitoring, smart water metering, smart irrigation, etc.
+
+- Toolboxes and frameworks for building your own dashboards, reports, alarms, graphics, etc. These can be independent products which integrate with external data sources or they can be provided as a part of the IoT software platform.
+
+- Custom software applicationswhich are developed from the ground up using standard software development technologies. These applications will use the IoT software platform APIs as the foundation for building their functionality.
+
+**************
+Cloud platform
+**************
+
+When comparing platforms, most companies often want an IoT cloud platform that covers all the bases, while being flexible in the ways they can store and stream data. Truly, most companies want out-of-the-box support for opinionated behaviors AND the flexibility to change those defaults that makes it special. Ultimately, as a consumer, you’re looking for the best IoT cloud platform that lets you achieve the above based on your solution.
+
+Scalability 
+===========
+
+First and foremost, an IoT cloud platform has to support millions of simultaneous device connections and allow you to configure devices for machine-to-machine communication. Of course, every IoT cloud platform will claim they can handle millions of simultaneous device connections. You should look for an IoT cloud platform that has consistently high uptime and offers complete transparency on previous downtimes. Every platform should have some type of platform status page; use this to examine their uptime and how they have handled past incidents. It may also help to examine the types of customers they have helped and the amount of devices they have deployed with them. You should also look for a platform that manages the scaling cloud infrastructure for you. The best vendors will monitor the performance of your devices and help you scale when necessary.
+
+
+
+Device Management Features
+==========================
+
+When comparing IoT cloud platforms, you need to assess how well the vendor allows you to monitor, segment, and manage edge devices that are out in the field.  To extract the right data out of your devices, you need a device management system that can interface with microprocessors and local software on IoT devices. This is complicated to build because few companies have an IoT hardware, software, and connectivity ecosystem that can handle bidirectional communication streams and provide device management services that don’t interfere with this process. For companies who want to have complete control over their remote devices, these are some of the basic features you’ll need: 
+
+- Cloud API — The ability to organize devices, segment your fleet for more granular control, and monitor the health of your devices in real-time.
+
+- Developer Tools — A central interface or set of tools that allow you to manage and reprogram your IoT devices wirelessly. 
+
+- Device command and control — Cloud-based functions that allow you to control variables and events through their Rest API structure.
+
+- Event Logs —An interface that allows you to see what’s happening with devices in real time to improve the experience of finding data that is relevant to you.
+
+- Remote Diagnostics — Features that allow you to actively monitor device health vitals and take preemptive actions when warning signs appear.
+
+*****************************
+ Over-the-Air Firmware Updates
+*****************************
+
+Over-the-air (OTA) firmware updates are a vital component of any IoT cloud platform. OTA firmware refers to the practice of remotely updating the code on an embedded device. The value of incorporating OTA update capabilities into a connected product cannot be understated, and include - 
+Companies can test new features by sending updates to one or multiple devices. Companies can save costs by managing the firmware across their fleet of devices from a seamless, unified interface, developers can deploy frequently and reliably, knowing that products will stay functional as updates are released.
+OTA firmware augments scalability by adding new features and infrastructure to products after they are released.
 
 ****************************
+Complete System Integrations
+****************************
 
-- Make sure all the blocks are connected.
-- Click on Deploy button on the top right-hand corner of the screen.
-- After deploying go to the dashboard ui by clicking the link to dashboard URL on the top right-hand corner of the screen.
-.. image:: https://hackster.imgix.net/uploads/attachments/1188517/screenshot_(129)_XVc78gQ2uu.png?auto=compress%2Cformat&w=740&h=555&fit=max
+How does the IoT cloud vendor integrate all the complex stuff that you need for IoT — like cellular modems, carrier/sim cards, device diagnostics, firmware updates, cloud connections, security, application layer, and RTOS ? This will probably require a call to a sales representative to understand how these discrete components work together. Talk with your engineers and make sure these parts all work together in a way that works easily for them. Have them compare these integrations with other IoT cloud vendor platform
 
-Rotate the Potentiometer to see the Guage change.
+******************
+ Data Management
+******************
 
-.. image:: https://hackster.imgix.net/uploads/attachments/1188519/screenshot_(131)_5Twk5JreOp.png?auto=compress%2Cformat&w=740&h=555&fit=max
-
+When it comes to storing, processing, and analyzing data, you need a system that is already built to handle it. The best IoT cloud platforms combine data sources from an entire fleet into a unified data flow that provides product-wide business intelligence. It is also imperative to choose a IoT cloud platform architecture that seamlessly integrates device data with your existing services. This allows you to reap all the benefits of getting to house your data where you want, without having to handle the complex building and maintenance aspects of hosting your own IoT cloud solution. For instance, many companies often want to send device data to their Sales force, Azure, or AWS environment. You should look for an IoT cloud platform that can handle these integrations and allow you to store your data where you want it.
 
 
