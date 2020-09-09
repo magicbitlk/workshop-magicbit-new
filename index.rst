@@ -263,7 +263,7 @@ Why Edge computing devices is the future?
 The data transmitted by sensors or devices directly to the cloud are highly dependent on the connectivity which is sometimes not reliable. The resources consumed even for a simple analysis in direct cloud accessed architecture is high which takes more time as well. This is whether the edge computing devices provides a major advantage. The edge computing devices are capable of processing and storing certain amounts of data and transmit to the cloud which saves power and valuable cloud resources together with time.
 Depending on the requirements with the increase of high performing computer hardware devices the edge computing will provide more promising future. 
  
-.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/222.jpg 
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/22.jpg 
 
 ===================================
  Micro-controller based edge devices
